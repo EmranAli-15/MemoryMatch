@@ -1,0 +1,26 @@
+.content {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card .content {
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #a2d6f5;
+    backface-visibility: hidden;
+}
+
+.back {
+    background: white;
+    transform: rotateY(180deg);
+}
